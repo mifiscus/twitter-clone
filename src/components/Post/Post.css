@@ -1,0 +1,357 @@
+.post {
+    display: flex;
+    align-items: flex-start;
+    border-bottom: 1px solid var(--twitter-background);
+    padding-bottom: 10px;
+    cursor: pointer;
+    position: relative;
+}
+
+.post:hover {
+    background: var(--twitter-extra-extra-light-gray);
+    transition: background 100ms ease-in-out;
+}
+
+.post__Link {
+    display: flex;
+    text-decoration: none;
+    color: inherit;
+    width: 100%;
+}
+
+.post__retweet {
+    display: flex;
+    font-size: 13px;
+    color: var(--twitter-gray);
+    align-items: center;
+    position: absolute;
+    top: 8px;
+    left: 45px;
+}
+
+.post__retweet:hover {
+    text-decoration: underline;
+}
+
+.post__body {
+    flex: 1;
+    padding: 12px;
+    padding-left: 0;
+    padding-right: 16px;
+}
+
+.post__body img {
+    border-radius: 20px;
+    width: 100%;
+}
+
+.post__footer {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    padding-right: 75px;
+    color: var(--twitter-gray);
+}
+
+.post__displayName {
+    color: var(--twitter-black);
+}
+
+.post__displayName:hover {
+    text-decoration: underline;
+}
+
+.post__headerDescription {
+    margin-bottom: 10px;
+    font-size: 15px;
+}
+
+.post__headerText {
+    display: flex;
+}
+
+.post__headerText h3 {
+    font-size: 15px;
+    margin-bottom: 5px;
+}
+
+.post__headerMenu {
+    color: var(--twitter-gray);
+    margin-left: auto; 
+    margin-right: 0;
+    height: 35px;
+    width: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+
+.post__headerMenu:hover {
+    color: var(--twitter-blue);
+    background-color: var(--twitter-light-blue);
+}
+
+.post__headerMenuList {
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    position: absolute;
+    top: 25px;
+    right: 25px;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 1;
+    background: #fff;
+    border-radius: 5px;
+    color: var(--twitter-black);
+    box-shadow: rgba(101, 119, 134, 0.2) 0px 0px 15px 0px;
+    box-shadow: rgba(101, 119, 134, 0.15) 0px 0px 3px 1px;
+    box-shadow: rgba(101, 119, 134, 0.2) 0px 0px 15px;
+    box-shadow: rgba(101, 119, 134, 0.15) 0px 0px 3px 1px;
+    transition: opacity 0.2s;
+}
+
+.post__headerMenuList.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+.post__headerMenuListItem {
+    display: flex;
+    align-items: center;
+    margin-left: -40px;
+    padding: 10px 0;
+}
+
+.post__headerMenuListItem:hover {
+    background: var(--twitter-extra-extra-light-gray);
+}
+
+.post__badge {
+    font-size: 14px !important;
+    color: var(--twitter-blue);
+}
+
+.post__headerSpecial {
+    font-weight: 500;
+    font-size: 15px;
+    color: var(--twitter-gray);
+}
+
+.post__avatar {
+    padding: 20px;
+}
+
+.post__numbers {
+    margin-left: 10px;
+    font-size: 13px;
+}
+
+.post__replies {
+    display: flex;
+    align-items: center;
+}
+
+.post__replies:hover span {
+    color: var(--twitter-blue);
+    transition: color 100ms ease-in-out;
+}
+
+.post__replies:hover div {
+    color: var(--twitter-blue);
+    background: var(--twitter-light-blue);
+    transition: all 100ms ease-in-out;
+}
+
+
+.post__repliesIcon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+}
+
+.post__retweets {
+    display: flex;
+    align-items: center;
+}
+
+.post__retweets:hover span {
+    color: var(--twitter-green);
+    transition: color 100ms ease-in-out;
+}
+
+.post__retweets:hover div {
+    color: var(--twitter-green);
+    background: var(--twitter-light-green);
+    transition: all 100ms ease-in-out;
+}
+
+.post__retweetsIcon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+}
+
+.post__retweeted {
+    display: flex;
+    align-items: center;
+    color: var(--twitter-green);
+}
+
+.post__retweeted:hover div {
+    background: var(--twitter-light-green);
+    transition: background 100ms ease-in-out;
+}
+
+.post__likes {
+    display: flex;
+    align-items: center;
+}
+
+.post__likes:hover span {
+    color: var(--twitter-pink);
+    transition: color 100ms ease-in-out;
+}
+
+.post__likes:hover div {
+    color: var(--twitter-pink);
+    background: var(--twitter-light-pink);
+    transition: all 100ms ease-in-out;
+}
+
+.post__likesIcon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+}
+
+.post__liked {
+    display: flex;
+    align-items: center;
+    color: var(--twitter-pink);
+}
+
+.post__liked:hover div {
+    background: var(--twitter-light-pink);
+    transition: background 100ms ease-in-out;
+}
+
+.post__share {
+    display: flex;
+    align-items: center;
+}
+
+.post__reply {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 88px;
+    border: 1px solid var(--twitter-light-gray);
+    border-radius: 14px;
+    
+}
+
+.post__reply:hover {
+    background: var(--twitter-extra-extra-light-gray);
+    transition: background 100ms ease-in-out;
+}
+
+.post__replyHeader {
+    display: flex;
+    margin: 12px;
+    margin-bottom: 0px;
+    align-items: center;
+    font-size: 15px;
+    
+}
+
+.post__replyHeader p {
+    margin-right: 5px;
+    color: var(--twitter-black);
+    font-weight: 700;
+}
+
+.post__replyHeader span {
+    color: var(--twitter-gray);
+}
+
+.post__replyBody {
+    margin: 12px;
+    margin-top: 8px;
+    overflow: hidden;
+    white-space: nowrap;
+    width: 450px;
+    text-overflow: ellipsis;
+}
+
+/* SHOWUSER */
+
+.showUser {
+    display: flex;
+    align-items: flex-start;
+    width: 100%;
+    cursor: pointer;
+    position: relative;
+}
+
+.showUser:hover {
+    background: var(--twitter-extra-extra-light-gray);
+    transition: background 200ms ease-in-out;
+}
+
+.showUser__headerText {
+    font-size: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+.showUser__headerText h3 {
+    font-size: 15px;
+    margin-bottom: 3px;
+}
+
+.showUser__headerText h3:hover {
+    text-decoration: underline;
+}
+
+.showUser__headerText p {
+    color: var(--twitter-gray);
+}
+
+.showUser__description {
+    margin-top: 10px;
+    font-size: 15px;
+    max-width: 370px;
+    overflow-wrap: break-word;
+}
+
+.showUser__follow {
+    border: 1px solid var(--twitter-light-gray) !important;
+    color: var(--twitter-black) !important;
+    font-weight: 700 !important;
+    font-size: 14px !important;
+    text-transform: inherit !important;
+    border-radius: 100px !important;
+    height: 35px !important;
+    width: 100px !important;
+    padding: 0 16px !important;
+    position: absolute !important;
+    right: 15px !important;
+    top: 15px !important;
+}
+
+.showUser__follow:hover {
+    border: 1px solid var(--twitter-light-red) !important;
+    background: var(--twitter-extra-light-red) !important;
+    color: var(--twitter-red) !important;
+}

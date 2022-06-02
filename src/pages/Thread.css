@@ -1,0 +1,134 @@
+.thread {
+    flex: 0.47;
+    border-right: 1px solid var(--twitter-background);
+    max-width: 800px;
+    overflow-y: scroll;
+
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    position: relative;
+}
+
+.thread::-webkit-scrollbar {
+    display: none;
+}
+
+.thread__heading {
+    display: flex;
+    align-items: center;
+}
+
+.thread__post {
+    display: flex;
+    flex-direction: column;
+    padding: 0 20px;
+}
+
+.thread__heading {
+    display: flex;
+    text-decoration: none;
+}
+
+.thread__avatar {
+    padding: 20px;
+    padding-left: 0;
+    cursor: pointer;
+}
+
+.thread__names {
+    cursor: pointer;
+}
+
+.thread__display {
+    font-size: 15px;
+    font-weight: 700;
+    color: var(--twitter-black);
+}
+
+.thread__display:hover {
+    text-decoration: underline;
+}
+
+.thread__username {
+    font-size: 15px;
+    color: var(--twitter-gray);
+}
+
+.thread__content {
+    font-size: 23px;
+    margin-top: 5px;
+    margin-bottom: 20px;
+}
+
+.thread__date {
+    font-size: 15px;
+    color: var(--twitter-gray);
+    margin-bottom: 20px;
+}
+
+.thread__date:hover {
+    text-decoration: underline; 
+}
+
+.thread__stats {
+    border-top: 1px solid var(--twitter-extra-light-gray);
+    padding: 20px 0;
+    font-size: 15px;
+}
+
+.thread__statWrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    width: 70%;
+    margin-left: 5px;
+}
+
+.thread__statNumber:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.thread__buttons {
+    display: flex;
+    justify-content: space-between;
+    padding: 12px 55px;
+    border-top: 1px solid var(--twitter-extra-light-gray);
+    border-bottom: 1px solid var(--twitter-extra-light-gray);
+    color: var(--twitter-gray);
+}
+
+.thread__likeMenuBackground {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 99;
+    background: #000;
+    opacity: 0.5;
+}
+
+.thread__likeMenu {
+    width: 600px;
+    height: 650px;
+    position: fixed;
+    z-index: 100;
+    background: #fff;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 16px;
+    overflow: auto;
+}
+
+.thread__likeMenuScrollBar {
+    width: 600px;
+    height: 650px;
+    overflow: auto;
+}
+
+.thread__reply {
+    width: 100%;
+    min-height: 150px;
+    border-bottom: 1px solid var(--twitter-extra-light-gray);
+}

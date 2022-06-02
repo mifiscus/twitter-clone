@@ -1,0 +1,86 @@
+.sidebar {
+    border-right: 1px solid var(--twitter-extra-extra-light-gray);
+    flex: 0.2;
+    min-width: 250px;
+    padding: 0 20px;
+    padding-top: 20px;
+    position: relative;
+}
+
+.sidebar Link {
+    text-decoration: none;
+}
+
+.sidebar__twitterIcon {
+    color: var(--twitter-blue);
+    font-size: 30px !important;
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+
+.sidebar__tweet {
+    background-color: var(--twitter-blue) !important;
+    border: none !important;
+    color: white !important;
+    font-weight: 900 !important;
+    font-size: 17px !important;
+    text-transform: inherit !important;
+    border-radius: 30px !important;
+    height: 50px !important;
+    margin-top: 20px !important;
+    margin-right: 100px !important;
+    max-width: 225px !important;
+}
+
+.sidebar__profileLink {
+    display: flex;
+}
+
+.sidebar__profile {
+    border-radius: 50px;
+    height: 65px;
+    position: absolute;
+    bottom: 15px;
+    display: flex;
+    flex-direction: row;
+    width: 250px;
+    align-items: center;
+    background: #fff;
+    justify-content: space-between;
+}
+
+.sidebar__profile:hover {
+    background: var(--twitter-extra-light-gray);
+    transition: background 200ms ease-in-out;
+}
+
+.sidebar__image {
+    border-radius: 50%;
+    max-height: 40px;
+    max-width: 40px;
+    display: flex;
+    margin-left: 15px;
+}
+
+.sidebar__profileName {
+    display: flex;
+    flex-direction: column;
+}
+
+.sidebar__profileDisplayName {
+    font-size: 15px;
+    font-weight: 700;
+    color: var(--twitter-black);
+}
+
+.sidebar__profileUsername {
+    font-size: 15px;
+    font-weight: 400;
+    color: var(--twitter-gray);
+}
+
+.sidebar__profileMore {
+    color: var(--twitter-black);
+    margin-right: 10px;
+}
+
